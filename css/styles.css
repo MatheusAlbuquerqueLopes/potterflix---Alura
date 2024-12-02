@@ -1,0 +1,114 @@
+body {
+    color: white;
+    background: #1e1e1e; /* Cor escura, estilo sombrio inspirado na saga */
+    font-family: "Chakra Petch", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 2px #ffcc00; /* Cor dourada, como o tema de Gryffindor */
+    padding: 20px;
+    font-size: 32px;
+    color: #ffcc00; /* Dourado */
+    text-align: center;
+}
+
+.header-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.chamada {
+    background: #3e3e3e; /* Cor escura para o fundo, inspirado nos cenários de Hogwarts */
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.chamada-texto h1 {
+    font-size: 50px;
+    color: #ffcc00; /* Cor de Gryffindor */
+}
+
+.chamada-texto p {
+    font-size: 24px;
+    color: #cccccc; /* Cor neutra */
+}
+
+.categoria {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.categoria h2 {
+    color: #ffcc00; /* Cor de Gryffindor */
+    font-size: 36px;
+}
+
+.categoria-videos {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.categoria-videos .video-item {
+    text-align: center;
+    width: 220px;
+}
+
+.categoria-videos img {
+    opacity: 0.7;
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5); /* Sombras douradas */
+}
+
+.categoria-videos img:hover {
+    opacity: 1.0;
+    transform: scale(1.1); /* Animação para aumentar a imagem ao passar o mouse */
+    box-shadow: 0 0 25px rgba(255, 204, 0, 0.8); /* Aumenta o brilho */
+}
+
+.categoria-videos p {
+    color: #ffcc00; /* Cor de Gryffindor */
+    font-size: 14px; /* Diminuir o tamanho da fonte */
+}
+
+.sparkle {
+    position: absolute;
+    background: radial-gradient(circle, #ffcc00, transparent);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: sparkleAnimation 1s ease-out forwards;
+}
+
+@keyframes sparkleAnimation {
+    0% {
+        transform: scale(0.5) translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5) translateY(-30px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(0) translateY(-60px);
+        opacity: 0;
+    }
+}
